@@ -4,13 +4,18 @@
 
 
 Скачать приложение через SSH Зайдите в папку и установите виртуальное окружение:
+1.python -m venv venv 
 
-python -m venv venv Активировать его: 2. source venv/scripts/activate
+Активировать его: 
+2. source venv/scripts/activate
 
-Обновить виртуальное окружение: 3. python -m pip install --upgrade pip
+Обновить виртуальное окружение: 
+3. python -m pip install --upgrade pip
 
-Установить в зависимости от файла require.txt: 4. pip install -r require.txt
+Установить в зависимости от файла require.txt: 
+4. pip install -r requirements.txt
 
-Выполните перемещение: 5. python Manage.py Migrate.
+Выполните перемещение: 
+5. python Manage.py Migrate.
 
 Запустить проект: 6. Сервер запуска Python Manage.py
