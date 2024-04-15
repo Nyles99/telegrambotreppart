@@ -70,10 +70,10 @@ def info(message):
                             img_option.close
                         except Exception:
                                 print("ошибка")
-                                bot.send_message(message.chat.id, "Идешь нахуй")
+                                bot.send_message(message.chat.id, "Что-то пошло не так")
                     except Exception:
                         print("ошибка")
-                        bot.send_message(message.chat.id, "Идешь нахуй")     
+                        bot.send_message(message.chat.id, "Что-то пошло не так")     
                 else:
                     bot.send_message(message.chat.id, "У ссылки, которую ты прислал, нет фотографии")
             bot.send_message(message.chat.id, f'Всего {z} фоток, реппартер!')
