@@ -32,7 +32,7 @@ def info(message):
                 #print(item, "привет")
                 href = "https://bamper.by" +item.get("src")
                 z += 1
-                if href != "https://bamper.by/local/templates/bsclassified/images/nophoto_car.png":
+                if "nophoto_car.png" not in href:
                     try:
                         img = requests.get(url=href, headers=headers)
                         img_option = open(f"{z}.png", 'wb')
